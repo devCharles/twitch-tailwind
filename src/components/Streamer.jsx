@@ -1,6 +1,11 @@
 export default function Streamer(props) {
   return (
-    <div className="grid grid-cols-[2rem_auto_3rem] items-center gap-1 px-2 hover:bg-white/5 cursor-pointer py-1">
+    <div
+      className={
+        "grid grid-cols-[2rem_auto_3rem] items-center gap-1 px-2 hover:bg-white/5 cursor-pointer py-1 " +
+        props.estilos
+      }
+    >
       <img
         className="h-[30px] rounded-full"
         src={props.img || "https://api.dicebear.com/7.x/rings/png?seed=x"}
